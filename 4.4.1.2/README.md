@@ -1,4 +1,53 @@
-# Configuration et vérification des listes de contrôle d'accès numérotées et nommées standard
-## Étape 1: Configurez une liste de contrôle d'accès standard numérotée :
+# Lab - Configuring Zone-Based Policy Firewalls
 
-Pour permettre à tous les hôtes sur le réseau 192.168.10.0/24 d'accéder au réseau 192.168.30.0/24, nous utiliserions le masque générique 0.0.0.255 ou 255.255.255.0.
+## Step 1: Traffic originating on the Internet
+
+a. To test the firewall’s effectiveness, ping PC-B from PC-A. In PC-A, open a command prompt and issue:
+
+```
+C:\Users\NetAcad> ping 192.168.3.3
+```
+
+Was the ping successful? Explain.
+
+b. Ping PC-C from PC-A. In PC-A, open a command window and issue:
+
+```
+C:\Users\NetAcad> ping 192.168.33.3
+```
+
+Was the ping successful? Explain.
+
+c. Ping PC-A from PC-B. In PC-B, open a command window and issue:
+
+```
+C:\Users\NetAcad> ping 192.168.1.3
+```
+
+d. Was the ping successful? Explain.
+
+Ping PC-A from PC-C. In PC-C, open a command window and issue:
+
+```
+C:\Users\NetAcad> ping 192.168.1.3
+```
+
+e. Was the ping successful? Explain.
+
+## Step 2: The Self Zone Verification
+
+a. From PC-A ping R3’s G0/1 interface:
+
+```
+C:\Users\NetAcad> ping 192.168.3.1
+```
+
+Was the ping successful? Is this the correct behavior? Explain.
+
+b. From PC-C ping R3’s G0/1 interface:
+
+```
+C:\Users\NetAcad> ping 192.168.3.1
+```
+
+Was the ping successful? Is this the correct behavior? Explain.
