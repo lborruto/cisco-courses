@@ -1,0 +1,4 @@
+conf t
+enable secret cisco12345cisco
+username sadmin privilege 15 secret cisco12345cisco
+exit
