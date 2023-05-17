@@ -1,4 +1,0 @@
-wr mem
-copy running-config startup-config
-
-
